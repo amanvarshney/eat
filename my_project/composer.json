@@ -24,7 +24,8 @@
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "sonata-project/admin-bundle": "dev-master",
 	"sonata-project/doctrine-orm-admin-bundle": "dev-master",
-        "symfony/security-acl": "^2.8"
+        "symfony/security-acl": "^2.8",
+        "hwi/oauth-bundle": "^0.4.0"
 
     },
     "require-dev": {

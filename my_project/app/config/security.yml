@@ -28,6 +28,31 @@ security:
 
             logout:    true
             anonymous:    true
+            oauth:
+                failure_path: your_path
+                login_path: your_path
+                check_path: /connect_check
+                provider: fos_userbundle
+                resource_owners:
+                    facebook: "/login/check-facebook"
+                oauth_user_provider:
+                    service: app.provider.oauth
+              
+        # secured_area:
+        #     anonymous: ~
+        #     oauth:
+        #         resource_owners:
+        #             facebook:           "/login/check-facebook"
+        #             google:             "/login/check-google"
+        #             my_custom_provider: "/login/check-custom"
+        #             my_github:          "/login/check-github"
+        #         login_path:        /login
+        #         use_forward:       false
+        #         failure_path:      /login
+
+        #         oauth_user_provider:
+        #             service: hwi_oauth.user.provider.fosub_bridge
+
 
     access_control:
         - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }

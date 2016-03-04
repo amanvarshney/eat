@@ -24,6 +24,8 @@ class AppKernel extends Kernel
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             //sonata bundle
             new Sonata\AdminBundle\SonataAdminBundle(),
+            //facebook login
+            new HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
 
 
         );
